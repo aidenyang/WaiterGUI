@@ -1,0 +1,18 @@
+Sale GUI readme 
+Alison Yang
+
+Run this program from the SaleTester. It will prompt you for a file in the console. Give it any properly formatted menu and it will run fine. In the case that the file is not found,
+program will terminate. Just run it again with the proper file. 
+
+GUI is self explanatory. The program is set to output the orders to a file named orders.txt. A "day" is a session without terminating the program.
+The receipts will be appended to orders.txt. 
+
+Design patterns used:
+Singleton
+Used in the menu class, it makes sure that only one instance of menu is ever made. This is done by calling the getInstance() method in the MainView, 
+and then only using the arraylist taken from that particular instance. 
+
+Facade
+Used in the MainView class, it simplifies more complicated subsystems like the innerworkings of the receipt and food panels by just using the initialize() method
+to set up the GUI. 
+
